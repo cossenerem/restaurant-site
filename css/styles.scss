@@ -83,21 +83,41 @@ header {
 .one {
     grid-column: 1 / 2;
     grid-row: 1;
+    transition: all 0.5s;
+}
+
+.one:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .two {
     grid-column: 2 / 3;
     grid-row: 1;
+    transition: all 0.5s;
+}
+
+.two:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .three {
     grid-column: 1 / 2;
     grid-row: 2;
+    transition: all 0.5s;
+}
+
+.three:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .four {
     grid-column: 2 / 3;
     grid-row: 2;
+    transition: all 0.5s;
+}
+
+.four:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .five {
@@ -111,26 +131,31 @@ header {
         margin-top: 10px;
         text-decoration: none;
         list-style: none;
+        font-size: 50px;
+    }
+
+    p {
+        padding: 5rem;
         font-size: 30px;
     }
 
 }
 
 .favspot {
-    font-size: 50px;
+    font-size: 75px;
 }
-
 /* END WRAPPER GRID */
 
-/* TOP PAGE TEXT */
+/* MENU CHECK TEXT */
 .menucheck-text {
     display: block;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
+    padding-top: 4rem;
     font-family: pomp;
-    font-size: 25px;
+    font-size: 35px;
 }
-/* END TOP PAGE TEXT */
+/* END MENU CHECK TEXT */
 
 /* LEARN MORE BUTTON */
 .button {
@@ -172,6 +197,27 @@ header {
     right: 0;
 }
 /* END LEARN MORE BUTTON */
+
+/* RESERVATION */
+
+.reservation {
+    text-align: center;
+    font-family: pomp;
+    padding: 2rem;
+    font-size: 45px;
+}
+
+.reservation h2 {
+    text-decoration: underline;
+    text-decoration-color: $orange;
+}
+
+.res2 {
+    padding: 2rem;
+    font-size: 30px;
+}
+
+/* END RESERVATION */
 
 /* FOOTER */
 footer {
