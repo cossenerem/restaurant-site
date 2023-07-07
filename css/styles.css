@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* FONTS */
 @font-face {
   font-family: macondo;
   src: url(../fonts/MacondoSwashCaps-Regular.ttf);
@@ -11,12 +12,13 @@
   font-family: pomp;
   src: url(../fonts/Pompiere-Regular.ttf);
 }
+/* END OF FONTS */
 /* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #CACAAA;
+  background-color: #cacaaa;
   padding: 50px 30px;
   font-family: macondo;
 }
@@ -26,6 +28,7 @@ header {
   color: #596157;
 }
 
+/* END OF HEADER */
 /* SITE NAV */
 .sitenav li {
   list-style: none;
@@ -43,4 +46,45 @@ header {
 
 .sitenav a:hover {
   color: #BA5624;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* END OF SITE NAV */
+/* WRAPPER GRID */
+.wrapper {
+  padding: 20px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.one {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+
+.four {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+/*# sourceMappingURL=styles.css.map */
