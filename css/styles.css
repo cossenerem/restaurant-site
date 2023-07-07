@@ -27,6 +27,8 @@ header {
 .title {
   margin-right: auto;
   color: #596157;
+  font-size: 3rem;
+  text-shadow: #596157 3px 2px 6px;
 }
 
 /* END OF HEADER */
@@ -52,6 +54,7 @@ header {
 /* END OF SITE NAV */
 /* WRAPPER GRID */
 .wrapper {
+  margin-top: 2rem;
   padding: 20px;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -90,10 +93,12 @@ header {
 
 /* END WRAPPER GRID */
 /* TOP PAGE TEXT */
-.toptext {
+.menucheck-text {
   display: block;
   text-align: center;
   padding: 2rem;
+  font-family: pomp;
+  font-size: 25px;
 }
 
 /* END TOP PAGE TEXT */
@@ -138,5 +143,15 @@ header {
 }
 
 /* END LEARN MORE BUTTON */
+/* FOOTER */
+footer {
+  font-family: pomp;
+  text-align: center;
+  background-color: #cacaaa;
+  padding: 1rem;
+  color: #596157;
+}
+
+/* END FOOTER */
 
 /*# sourceMappingURL=styles.css.map */
