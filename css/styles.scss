@@ -38,6 +38,7 @@ header {
     font-size: 3rem;
     text-shadow: $ebony 3px 2px 6px;
 
+    /* medium */
     @media screen and (max-width: 768px) {
         font-size: 2rem;
     }
@@ -50,7 +51,12 @@ header {
     display: inline-block;
     padding: 10px 20px;
 
+    /* mobile */
     @media screen and (max-width: 600px) {
+        padding: 5px 5px;
+    }
+    /* small */
+    @media screen and (min-width: 600px) {
         padding: 5px 5px;
     }
 }
@@ -62,6 +68,7 @@ header {
     font-family: pomp;
     font-size: 200%;
 
+    /* medium */
     @media screen and (max-width: 768px) {
         font-size: 150%;
     }
@@ -76,21 +83,32 @@ header {
 /* WRAPPER GRID */
 .wrapper {
     margin-top: 2rem;
-    padding: 20px;
     margin-left: 5rem;
     margin-right: 5rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 20% 20% 1fr;
+    grid-template-rows: 45% 45%;
+    grid-auto-rows: minmax(100px, auto);
     gap: 20px;
 }
 
+/* mobile */
 @media screen and (max-width: 600px) {
     .wrapper {
         margin-top: 0;
         padding: 0;
-        grid-template-columns: repeat(2, 200px);
-        grid-template-rows: repeat(2, 200px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+/* small to medium */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .wrapper {
+        margin-top: 0;
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: space-between;
     }
 }
 
@@ -106,7 +124,13 @@ header {
     grid-row: 1;
     transition: all 0.5s;
 
+    /* mobile */
     @media screen and (max-width: 600px) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    /* small to medium */
+    @media screen and (min-width: 600px) and (max-width: 992px) {
         grid-column: 1;
         grid-row: 1;
     }
@@ -121,7 +145,13 @@ header {
     grid-row: 1;
     transition: all 0.5s;
 
+    /* mobile */
     @media screen and (max-width: 600px) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    /* small to medium */
+    @media screen and (min-width: 600px) and (max-width: 992px) {
         grid-column: 1;
         grid-row: 2;
     }
@@ -135,7 +165,14 @@ header {
     grid-column: 1;
     grid-row: 2;
     transition: all 0.5s;
+
+    /* mobile */
     @media screen and (max-width: 600px) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    /* small to medium */
+    @media screen and (min-width: 600px) and (max-width: 992px) {
         grid-column: 2;
         grid-row: 2;
     }
@@ -146,11 +183,16 @@ header {
 }
 
 .four {
-    grid-column: 2 / 3;
+    grid-column: 2;
     grid-row: 2;
     transition: all 0.5s;
 
+    /* mobile */
     @media screen and (max-width: 600px) {
+        display: none;   
+    }
+    /* small to medium */
+    @media screen and (min-width: 600px) and (max-width: 992px) {
         display: none;   
     }
 }
@@ -160,13 +202,28 @@ header {
 }
 
 .five {
-    grid-column: 3 / 5;
+    grid-column: 3;
     grid-row: span 2;
     padding: 2rem;
     font-family: pomp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 
+    /* mobile */
     @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 1;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    /* small to medium */
+    @media screen and (min-width: 600px) and (max-width: 992px) {
         display: flex;
         flex-direction: column;
         grid-column: 2;
@@ -181,30 +238,26 @@ header {
     margin-top: 10px;
     text-decoration: none;
     list-style: none;
-    font-size: 50px;
-    
-    @media screen and (max-width: 600px) {
-        font-size: 25px;
-    }
+    font-size: 4vw;
 }
 
 .five-sm {
-    padding: 5rem;
-    font-size: 30px;
+    margin-top: 1rem;
+    font-size: 3vw;
 
+    /* mobile */
     @media screen and (max-width: 600px) {
+        display: none;
+    }
+    /* small to medium */
+    @media screen and (min-width: 600px) and (max-width: 992px) {
         display: none;
     }
 }
 
 .favspot {
-    font-size: 75px;
-
-    @media screen and (max-width: 600px) {
-        font-size: 28px;
-    }
+    font-size: 6vw;
 }
-
 
 /* END WRAPPER GRID */
 

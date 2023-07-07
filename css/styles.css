@@ -29,6 +29,7 @@ header {
   color: #596157;
   font-size: 3rem;
   text-shadow: #596157 3px 2px 6px;
+  /* medium */
 }
 @media screen and (max-width: 768px) {
   .title {
@@ -42,8 +43,15 @@ header {
   list-style: none;
   display: inline-block;
   padding: 10px 20px;
+  /* mobile */
+  /* small */
 }
 @media screen and (max-width: 600px) {
+  .sitenav li {
+    padding: 5px 5px;
+  }
+}
+@media screen and (min-width: 600px) {
   .sitenav li {
     padding: 5px 5px;
   }
@@ -55,6 +63,7 @@ header {
   transition: all 0.3s ease 0s;
   font-family: pomp;
   font-size: 200%;
+  /* medium */
 }
 @media screen and (max-width: 768px) {
   .sitenav a {
@@ -70,21 +79,32 @@ header {
 /* WRAPPER GRID */
 .wrapper {
   margin-top: 2rem;
-  padding: 20px;
   margin-left: 5rem;
   margin-right: 5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 20% 20% 1fr;
+  grid-template-rows: 45% 45%;
+  grid-auto-rows: minmax(100px, auto);
   gap: 20px;
 }
 
+/* mobile */
 @media screen and (max-width: 600px) {
   .wrapper {
     margin-top: 0;
     padding: 0;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+/* small to medium */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .wrapper {
+    margin-top: 0;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
   }
 }
 .wrapper img {
@@ -98,8 +118,16 @@ header {
   grid-column: 1;
   grid-row: 1;
   transition: all 0.5s;
+  /* mobile */
+  /* small to medium */
 }
 @media screen and (max-width: 600px) {
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
   .one {
     grid-column: 1;
     grid-row: 1;
@@ -114,8 +142,16 @@ header {
   grid-column: 2;
   grid-row: 1;
   transition: all 0.5s;
+  /* mobile */
+  /* small to medium */
 }
 @media screen and (max-width: 600px) {
+  .two {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
   .two {
     grid-column: 1;
     grid-row: 2;
@@ -130,8 +166,16 @@ header {
   grid-column: 1;
   grid-row: 2;
   transition: all 0.5s;
+  /* mobile */
+  /* small to medium */
 }
 @media screen and (max-width: 600px) {
+  .three {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
   .three {
     grid-column: 2;
     grid-row: 2;
@@ -143,11 +187,18 @@ header {
 }
 
 .four {
-  grid-column: 2/3;
+  grid-column: 2;
   grid-row: 2;
   transition: all 0.5s;
+  /* mobile */
+  /* small to medium */
 }
 @media screen and (max-width: 600px) {
+  .four {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
   .four {
     display: none;
   }
@@ -158,13 +209,30 @@ header {
 }
 
 .five {
-  grid-column: 3/5;
+  grid-column: 3;
   grid-row: span 2;
   padding: 2rem;
   font-family: pomp;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  /* mobile */
+  /* small to medium */
 }
 @media screen and (max-width: 600px) {
+  .five {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
   .five {
     display: flex;
     flex-direction: column;
@@ -180,31 +248,28 @@ header {
   margin-top: 10px;
   text-decoration: none;
   list-style: none;
-  font-size: 50px;
-}
-@media screen and (max-width: 600px) {
-  .threepoints {
-    font-size: 25px;
-  }
+  font-size: 4vw;
 }
 
 .five-sm {
-  padding: 5rem;
-  font-size: 30px;
+  margin-top: 1rem;
+  font-size: 3vw;
+  /* mobile */
+  /* small to medium */
 }
 @media screen and (max-width: 600px) {
   .five-sm {
     display: none;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .five-sm {
+    display: none;
+  }
+}
 
 .favspot {
-  font-size: 75px;
-}
-@media screen and (max-width: 600px) {
-  .favspot {
-    font-size: 28px;
-  }
+  font-size: 6vw;
 }
 
 /* END WRAPPER GRID */
