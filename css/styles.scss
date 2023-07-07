@@ -9,6 +9,7 @@ $eminence: #542E71;
     padding: 0;
 }
 
+/* FONTS */
 @font-face {
     font-family: macondo;
     src: url(../fonts/MacondoSwashCaps-Regular.ttf);
@@ -18,6 +19,7 @@ $eminence: #542E71;
     font-family: pomp;
     src: url(../fonts/Pompiere-Regular.ttf);
 }
+/* END OF FONTS */
 
 /* HEADER */
 header {
@@ -33,6 +35,7 @@ header {
     margin-right: auto;
     color: $ebony;
 }
+/* END OF HEADER */
 
 /* SITE NAV */
 .sitenav li {
@@ -52,3 +55,5 @@ header {
 .sitenav a:hover {
     color: $orange;
 }
+/* END OF SITE NAV */
+
