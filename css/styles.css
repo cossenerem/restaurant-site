@@ -81,10 +81,8 @@ header {
 
 @media screen and (max-width: 600px) {
   .wrapper {
-    margin-top: 0.5rem;
-    padding: 5px;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-top: 0;
+    padding: 0;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(2, 200px);
   }
@@ -168,10 +166,13 @@ header {
 }
 @media screen and (max-width: 600px) {
   .five {
+    display: flex;
+    flex-direction: column;
     grid-column: 2;
     grid-row: 1;
     padding: 0;
-    padding-top: 10%;
+    justify-content: center;
+    align-items: center;
   }
 }
 
