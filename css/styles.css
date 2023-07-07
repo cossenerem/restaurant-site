@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: macondo;
+  src: url(../fonts/MacondoSwashCaps-Regular.ttf);
+}
+@font-face {
+  font-family: pomp;
+  src: url(../fonts/Pompiere-Regular.ttf);
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CACAAA;
+  padding: 50px 30px;
+  font-family: macondo;
+}
+
+.title {
+  margin-right: auto;
+  color: #596157;
+}
+
+/* SITE NAV */
+.sitenav li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.sitenav a {
+  text-decoration: none;
+  color: #596157;
+  transition: all 0.3s ease 0s;
+  font-family: pomp;
+  font-size: 200%;
+}
+
+.sitenav a:hover {
+  color: #BA5624;
+}/*# sourceMappingURL=styles.css.map */
