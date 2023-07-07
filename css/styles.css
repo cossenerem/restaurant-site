@@ -30,6 +30,11 @@ header {
   font-size: 3rem;
   text-shadow: #596157 3px 2px 6px;
 }
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
 
 /* END OF HEADER */
 /* SITE NAV */
@@ -38,6 +43,11 @@ header {
   display: inline-block;
   padding: 10px 20px;
 }
+@media screen and (max-width: 600px) {
+  .sitenav li {
+    padding: 5px 5px;
+  }
+}
 
 .sitenav a {
   text-decoration: none;
@@ -45,6 +55,11 @@ header {
   transition: all 0.3s ease 0s;
   font-family: pomp;
   font-size: 200%;
+}
+@media screen and (max-width: 768px) {
+  .sitenav a {
+    font-size: 150%;
+  }
 }
 
 .sitenav a:hover {
@@ -59,12 +74,21 @@ header {
   margin-left: 5rem;
   margin-right: 5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
 }
 
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-top: 0.5rem;
+    padding: 5px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+  }
+}
 .wrapper img {
   width: 100%;
   height: 100%;
@@ -73,9 +97,15 @@ header {
 }
 
 .one {
-  grid-column: 1/2;
+  grid-column: 1;
   grid-row: 1;
   transition: all 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 
 .one:hover {
@@ -83,9 +113,15 @@ header {
 }
 
 .two {
-  grid-column: 2/3;
+  grid-column: 2;
   grid-row: 1;
   transition: all 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .two {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 
 .two:hover {
@@ -93,9 +129,15 @@ header {
 }
 
 .three {
-  grid-column: 1/2;
+  grid-column: 1;
   grid-row: 2;
   transition: all 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .three {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
 
 .three:hover {
@@ -106,6 +148,11 @@ header {
   grid-column: 2/3;
   grid-row: 2;
   transition: all 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .four {
+    display: none;
+  }
 }
 
 .four:hover {
@@ -119,19 +166,44 @@ header {
   font-family: pomp;
   text-align: center;
 }
-.five ul {
+@media screen and (max-width: 600px) {
+  .five {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    padding-top: 10%;
+  }
+}
+
+.threepoints {
   margin-top: 10px;
   text-decoration: none;
   list-style: none;
   font-size: 50px;
 }
-.five p {
+@media screen and (max-width: 600px) {
+  .threepoints {
+    font-size: 25px;
+  }
+}
+
+.five-sm {
   padding: 5rem;
   font-size: 30px;
+}
+@media screen and (max-width: 600px) {
+  .five-sm {
+    display: none;
+  }
 }
 
 .favspot {
   font-size: 75px;
+}
+@media screen and (max-width: 600px) {
+  .favspot {
+    font-size: 28px;
+  }
 }
 
 /* END WRAPPER GRID */
