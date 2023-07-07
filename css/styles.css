@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -86,5 +87,56 @@ header {
   grid-column: 2/3;
   grid-row: 2;
 }
+
+/* END WRAPPER GRID */
+/* TOP PAGE TEXT */
+.toptext {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* END TOP PAGE TEXT */
+/* LEARN MORE BUTTON */
+.button {
+  background-color: #BA5624;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* END LEARN MORE BUTTON */
 
 /*# sourceMappingURL=styles.css.map */
