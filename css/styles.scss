@@ -1,5 +1,6 @@
 $sage: #cacaaa;
 $sageop: rgba(202, 202, 170, .9);
+$sageop2: rgba(202, 202, 170, .3);
 $ebony: #596157;
 $orange: #BA5624;
 $plum: #8D3B72;
@@ -268,7 +269,6 @@ header {
     display: block;
     text-align: center;
     padding: 3rem;
-    padding-top: 4rem;
     font-family: pomp;
     font-size: 35px;
 }
@@ -319,7 +319,7 @@ header {
 .reservation {
     text-align: center;
     font-family: pomp;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 45px;
 }
 
@@ -329,10 +329,94 @@ header {
 }
 
 .res2 {
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 30px;
 }
 /* END RESERVATION */
+
+/* REVIEWS */
+.thoughts {
+    display: flex;
+    font-family: pomp;
+    justify-content: center;
+    font-size: 30px;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 600px) {
+    .reviews {
+    margin: 1rem;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+}
+
+.cards-item {
+    display: flex;
+    padding: 1rem;
+}
+
+.card {
+    background-color: $sageop2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $sage;
+}
+
+.card-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .cards-item:nth-child(3) {
+        grid-column: span 2;
+        justify-content: center;
+
+    }
+}
+
+.review-name {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    font-family: pomp;
+    font-weight: bold;
+}
+
+.review-text {
+    flex: 1 1 auto;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    font-family: pomp;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+    .review-text {
+        font-size: 3vw;
+    }
+}
+
+/* END REVIEWS */
 
         /* END HOME PAGE */
 
