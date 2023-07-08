@@ -425,6 +425,79 @@ header {
 }
 /* END REVIEWS */
 /* END HOME PAGE */
+/* MENU PAGE */
+/* MENU TABS */
+.menu-tabs {
+  font-family: pomp;
+  color: #596157;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 30px 30px;
+  padding: 20px;
+}
+
+.menu-tabs input[type=radio] {
+  display: none;
+}
+
+.menu-tabs label {
+  padding: 20px;
+  background: rgba(202, 202, 170, 0.7);
+  font-weight: bold;
+  border: 1px dotted rgba(89, 97, 87, 0.3);
+}
+
+.menu-tabs .tab {
+  width: 100%;
+  padding: 20px;
+  background: rgba(202, 202, 170, 0.3);
+  order: 1;
+  display: none;
+  border: 1px dotted rgba(89, 97, 87, 0.3);
+}
+
+.menu-tabs .tab h2 {
+  font-size: 2rem;
+}
+
+.menu-tabs input[type=radio]:checked + label + .tab {
+  display: block;
+}
+
+.menu-tabs input[type=radio]:checked + label {
+  -webkit-text-decoration: underline 2px #BA5624;
+          text-decoration: underline 2px #BA5624;
+  background-color: #cacaaa;
+}
+
+/* END MENU TABS */
+/* MENU CARDS */
+.tab {
+  display: flex;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.menu-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.menu-card p {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* END MENU PAGE */
 /* CONTACT PAGE */
 /* BODY */
 .contactbody {

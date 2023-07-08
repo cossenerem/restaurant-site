@@ -1,7 +1,9 @@
 $sage: #cacaaa;
 $sageop: rgba(202, 202, 170, .9);
 $sageop2: rgba(202, 202, 170, .3);
+$sageop3: rgba(202, 202, 170, .7);
 $ebony: #596157;
+$ebonyop: rgb(89, 97, 87, .3);
 $orange: #BA5624;
 $plum: #8D3B72;
 $eminence: #542E71;
@@ -419,6 +421,81 @@ header {
 /* END REVIEWS */
 
         /* END HOME PAGE */
+
+        /* MENU PAGE */
+
+/* MENU TABS */
+.menu-tabs {
+    font-family: pomp;
+    color: $ebony;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 30px 30px;
+    padding: 20px;
+}
+
+.menu-tabs input[type="radio"] {
+    display: none;
+}
+
+.menu-tabs label {
+    padding: 20px;
+    background: $sageop3;
+    font-weight: bold;
+    border: 1px dotted $ebonyop;
+}
+
+.menu-tabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: $sageop2;
+    order: 1;
+    display: none;
+    border: 1px dotted $ebonyop;
+}
+
+.menu-tabs .tab h2 {
+    font-size: 2rem;
+}
+
+.menu-tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.menu-tabs input[type="radio"]:checked + label {
+    text-decoration: underline 2px $orange;
+    background-color: $sage;
+}
+/* END MENU TABS */
+
+/* MENU CARDS */
+.tab {
+    display: flex;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.menu-card img {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.menu-card p {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+
+        /* END MENU PAGE */
 
         /* CONTACT PAGE */
 
