@@ -420,6 +420,45 @@ header {
 
         /* END HOME PAGE */
 
+        /* CONTACT PAGE */
+
+/* BODY */
+.contactbody {
+    margin: 3rem 5rem 3rem 5rem;
+    padding: 1rem;
+    outline: dotted 2px $sage;
+}
+
+/* CONTACT INFO */
+.phone, .address, .hours, .email {
+    display: block;
+    font-family: pomp;
+    font-size: 3vw;
+    padding: 0.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .phonetitle, .addresstitle, .hourstitle, .emailtitle {
+        font-size: 4vw;
+        text-decoration: underline $orange;
+    }
+}
+
+.intro {
+    display: block;
+    font-family: pomp;
+    font-size: 5vw;
+    padding: 2rem;
+    text-align: center;
+}
+
+.intro h3 {
+    margin-top: 2rem;
+}
+/* END CONTACT INFO */
+
+        /* END CONTACT PAGE */
+
 /* FOOTER */
 footer {
     font-family: pomp;

@@ -425,6 +425,43 @@ header {
 }
 /* END REVIEWS */
 /* END HOME PAGE */
+/* CONTACT PAGE */
+/* BODY */
+.contactbody {
+  margin: 3rem 5rem 3rem 5rem;
+  padding: 1rem;
+  outline: dotted 2px #cacaaa;
+}
+
+/* CONTACT INFO */
+.phone, .address, .hours, .email {
+  display: block;
+  font-family: pomp;
+  font-size: 3vw;
+  padding: 0.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.phone .phonetitle, .phone .addresstitle, .phone .hourstitle, .phone .emailtitle, .address .phonetitle, .address .addresstitle, .address .hourstitle, .address .emailtitle, .hours .phonetitle, .hours .addresstitle, .hours .hourstitle, .hours .emailtitle, .email .phonetitle, .email .addresstitle, .email .hourstitle, .email .emailtitle {
+  font-size: 4vw;
+  -webkit-text-decoration: underline #BA5624;
+          text-decoration: underline #BA5624;
+}
+
+.intro {
+  display: block;
+  font-family: pomp;
+  font-size: 5vw;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro h3 {
+  margin-top: 2rem;
+}
+
+/* END CONTACT INFO */
+/* END CONTACT PAGE */
 /* FOOTER */
 footer {
   font-family: pomp;
